@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>연습문제3_표태그</title>
+
+    <style>
+        /* td, th {
+            width: 50px;
+            height: 50px;
+        } */
+
+        thead {
+            background-color: aqua;
+        }
+
+        tbody {
+            background-color: orange;
+        }
+
+        tfoot {
+            background-color: yellow;
+        }
+        
+        tbody th, tfoot th {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1>연습문제3_표태그</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5" width="350px">건강마켓</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5" width="80px" height="120px">제품리스트</th>
+                <th height="20px">제조사</th>
+                <th>분류</th>
+                <th>가격</th>
+                <th>구매가능 개수</th>
+            </tr>
+            <tr>
+                <td>안군건강</td>
+                <td>루테인</td>
+                <td>200,000원</td>
+                <td>1068</td>
+            </tr>
+            <tr>
+                <td>대운제약</td>
+                <td>밀크씨슬</td>
+                <td>150,000원</td>
+                <td>1700</td>
+            </tr>
+            <tr>
+                <td>종근당근</td>
+                <td>비타민</td>
+                <td>700,000원</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>유한양갱</td>
+                <td>항산화제</td>
+                <td>220,000원</td>
+                <td>3200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">총합</th>
+                <td>1,270,000원</td>
+                <td>8468</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-color: lightgray;
+  }
+  
+  #t01 {
+    width: 800px;
+    height: 500px;
+    /* background-color: red; */
+    border: 30px dashed pink;
+    box-sizing: border-box;
+  
+    background-image: url(../img/ogu.jpg);
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+  
+    /* background-size: auto; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-size: 700px 400px; */
+    background-size: 100% 100%;
+  
+    /* background-position: right top; */
+    /* background-position: center center; */
+    /* background-position: 100px 100px; */
+    /* background-position: 50% 50%; */
+  
+    /* background-origin: border-box;
+    background-origin: padding-box;
+    background-origin: content-box; */
+  
+    
+  
+  
+  
+  }

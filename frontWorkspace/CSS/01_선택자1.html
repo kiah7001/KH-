@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+
+  <!-- 내부 스타일 시트 -->
+  <style>
+    /* 
+    [문법]
+    선택자 {
+      스타일명 : 스타일값;
+      스타일명 : 스타일값;
+      스타일명 : 스타일값;
+      ...
+    }
+    */
+
+    * {
+      color : red;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <h1 id="first" class="hello">선택자</h1>
+  
+  <h2 class="hello" id="second">222</h2>
+  <h3 class="hello">333</h3>
+  <h4 class="hello">444</h4>
+  <h5 class="hello">555</h5>
+  <h6 class="hello">666</h6>
+
+  <pre id="target">
+    태그 선택자   : 태그이름 그냥 쓰면 됨
+    클래스 선택자 : 앞에 . 붙이기
+    아이디 선택자 : 앞에 # 붙이기
+
+    [우선순위]
+    태그 < 클래스 < 아이디 < 인라인 < !important
+
+    우선순위가 동일한 경우, 마지막 내용이 적용됨
+  </pre>
+
+</body>
+</html>

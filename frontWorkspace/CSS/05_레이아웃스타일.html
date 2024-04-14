@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 스타일</title>
+  <link rel="stylesheet" href="http://61.78.95.160:5500//CSS/05_레이아웃스타일.css">
+</head>
+<body>
+  
+  <h1>레이아웃 스타일</h1>
+
+  <hr>
+
+  <h2>기본 스타일</h2>
+  <h3>width , height</h3>
+
+  <h4>고정크기</h4>
+  <h4>가변크기</h4>
+
+  <!-- <div id="size-test"></div> -->
+
+  <!-- <span id="target">안녕</span> -->
+
+  <div id="t01" class="box">일</div>
+  <div id="t02" class="box">이</div>
+  <div id="t03" class="box">삼</div>
+
+  <h3>화면 배치 방법 변경</h3>
+  <pre>
+    display 속성 변경
+  </pre>
+
+  <h3>테두리</h3>
+  <pre>
+    border
+  </pre>
+
+  <div id="border-test">얖</div>
+
+
+  <h2>여백 스타일</h2>
+  <pre>
+    margin
+    padding
+  </pre>
+
+  <div id="space01" class="nemo">얖01</div>
+  <div id="space02" class="nemo">얖02</div>
+  <div id="space03" class="nemo">얖03</div>
+
+
+  <h2>포지셔닝</h2>
+
+  <pre>
+    position
+
+    static : 기본값
+              HTML 작성 순서대로 쌓임 (블록이 쌓이듯 ...)
+
+    relative : 기존 자기자신 위치를 기준으로 위치선정
+               (그렇다고, 다른애가 내 원래자리 침범하는건 안됨)
+
+    absolute : 부모태그를 기준으로 위치선정
+              (부모의 조건 : position 값이 static 이 아니어야 함)
+              (부모조건에 맞지 않으면, 상위요소를 찾아감...반복)
+              (찾다가 찾다가 없으면,,, 결국 html 요소까지 올라감)
+              유령이 됨 (==다른 요소와 충돌 없음 , 기존자리 차지안함)
+
+    fixed : 화면 기준 위치선정
+            유령이 됨 (==다른 요소와 충돌 없음 , 기존자리 차지안함)
+
+    sticky : 조건부 fixed
+              기본적으로는 자기 자리 지킴
+              근데, 화면 기준으로 자리잡을 수 있으면 fixed 가 됨
+              부모요소를 벗어날 수 없음
+  </pre>
+
+  <div id="outer">
+    <div id="div01">얖01</div>
+    <div id="div02">얖02</div>
+    <div id="div03">얖03</div>
+  </div>
+
+
+  <h3>visibility</h3>
+
+  <div id="v-test" class="nemo">디브</div>
+  <div id="v-test2" class="nemo">디브2</div>
+
+
+  <h3>z-index</h3>
+
+  <div id="wrap">
+    <div id="d01">얖01</div>
+    <div id="d02">얖02</div>
+    <div id="d03">얖03</div>
+  </div>
+
+
+  <h3>float , clear</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

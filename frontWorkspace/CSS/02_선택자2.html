@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자2</title>
+
+  <!-- 외부 스타일시트 -->
+  <link rel="stylesheet" href="http://61.78.95.160:5500/CSS/02_선택자2.css">
+
+</head>
+<body>
+  
+  <h1>선택자2</h1>
+
+  <h2>1. 기본 속성 선택자</h2>
+
+  <pre>
+    기본 선택자 뒤에 []를 사용하여 속성과 속성값을 사용한다.
+
+    선택자[속성=속성값] {
+      스타일 속성: 값;
+      스타일 속성: 값;
+      ...
+    }
+  </pre>
+
+  아이디 : <input type="text" name="userId">
+  <br>
+  <label id="userPwdLable">비밀번호 :</label> <input type="password" name="userPwd">
+
+  <br><br><br>
+  <hr>
+  <br><br><br>
+
+  <h2>2. 자식선택자 , 자손선택자</h2>
+
+  <pre>
+    자식 : 바로 아래
+    자손 : 아래 전부
+
+    1) 자식 선택자
+        a>b {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+
+    2) 자손 선택자
+        a b {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+  </pre>
+
+  <div id="test01">
+    <h4>div의 자식요소입니다.</h4>
+    <h4>div의 자식요소입니다.</h4>
+    <ul>
+      <li>div > ul > li 요소입니다.</li>
+      <li>div > ul > li 요소입니다.</li>
+      <h4>div > ul > h4 요소입니다.</h4>
+    </ul>
+  </div>
+
+  <br><br><br>
+  <hr>
+  <br><br><br>
+
+  <h2>3. 동위(형제) 선택자</h2>
+
+  <pre>
+    동위 관계(같은 레벨)에서 뒤에 위치한 태그를 선택할 때 사용한다.
+
+    1) a 선택자 뒤에 있는 b 요소 한 개 선택
+          a+b {
+              스타일 속성: 값;
+              스타일 속성: 값;
+              ...
+          }
+
+    2) a 선택자 뒤에 있는 모든 b 요소 선택
+          a~b {
+              스타일 속성: 값;
+              스타일 속성: 값;
+              ...
+          }
+  </pre>
+
+
+  <div id="target">div01</div>
+  <div>div02</div>
+  <div>div03</div>
+  <div>div04</div>
+  <div>div05</div>
+
+
+  <br><br><br>
+  <hr>
+  <br><br><br>
+
+
+  <h2>4. 반응 선택자</h2>
+
+  <pre>
+    사용자의 움직임에 따라 달라지는 선택자
+
+    1) 사용자가 클릭하는 요소에 스타일 적용
+        선택자:active {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+
+    2) 사용자가 마우스를 올려놓는 요소에 스타일 적용
+        선택자:hover {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+  </pre>
+
+  <div id="active-test">active test</div>
+  <br>
+  <div id="hover-test">hover test</div>
+
+
+  <br><br><br>
+  <hr>
+  <br><br><br>
+
+  <h2>5. 상태 선택자</h2>
+
+  <pre>
+    입력 양식의 상태에 따라 선택되는 선택자    
+
+    1) 체크된 상태의 태그
+        선택자:checked {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+
+    2) 초점이 맞춰진 태그 스타일 변경
+        선택자:focus {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+
+    3) 사용 가능한 태그 선택
+        선택자:enabled {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+
+    4) 사용 불가능한 태그 선택
+        선택자:disbled {
+            스타일 속성: 값;
+            스타일 속성: 값;
+            ...
+        }
+  </pre>
+
+  <input id="btn01" type="button" value="버튼01ㅋㅋ" enabled>
+  <input id="btn02" type="button" value="버튼02ㅋㅋ" disabled>
+
+  <pre>
+    first-of-type
+    last-of-type
+    nth-of-type(n)
+    nth-of-type(2n)
+    nth-of-type(even)
+    nth-of-type(odd)
+    nth-child(n)
+    nth-child(2n)
+    nth-child(even)
+    nth-child(odd)
+    ::selection
+    :not()
+
+    나중에,,,
+    ::after
+    ::before
+
+    굳이 ,,,
+    ::first-letter
+    ::first-line
+  </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
