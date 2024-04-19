@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+
+    <link rel="stylesheet" href="./시험01.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <form id="loginForm">
+            <div class="spacer"></div>
+            <label>아이디
+                <input type="text" name="id" id="idInput">
+                <span class="error" id="idError">필수 입력 항목 입니다</span>
+            </label><br>
+
+            <label>패스워드
+                <input type="password" name="password" id="passwordInput">
+                <span class="error" id="passwordError">필수 입력 항목 입니다</span>
+            </label>
+            <div class="password-guidelines" id="passwordGuidelines">(영문 대/소문자, 특수문자, 숫자 포함 8~32글자)</div>
+            <br><br>
+
+            <label>패스워드 확인
+                <input type="password" name="password_confirm" id="passwordConfirmInput">
+                <span class="error" id="passwordConfirmError">필수 입력 항목 입니다</span>
+            </label><br>
+
+            <label>이메일
+                <input type="email" name="email">
+            </label><br>
+
+
+            <label>주소
+                <input type="text" name="address">
+            </label><br>
+            
+            
+                
+            <label>  &nbsp;
+                <input type="text" name="address">
+            </label>
+            <br>
+
+            <br>
+            <button type="submit">가입 버튼</button>
+        </form>
+    </div>
+      <script src="./시험01.js"></script>
+</body>
+</html>

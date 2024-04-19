@@ -1,0 +1,69 @@
+.notice{
+  border: 1px solid black;
+  width: 100%;
+}
+
+.notice th, .notice td{
+  border: 1px solid black;
+}
+
+.notice thead, .notice tfoot{
+  background-color: coral;
+  color: #fff;
+}
+
+#content01{
+  height: 100;
+}
+
+.notice tbody{
+  background-color: beige;
+}
+
+.notice thead > tr > th:first-of-type{
+  width: 40px;
+}
+
+.notice thead > tr > th:nth-of-type(2){
+  width: 630px;
+}
+
+.notice thead > tr > th:nth-of-type(3), notice thead > tr > th:nth-of-type(4){
+  width: 100px;
+}
+
+.notice thead > tr > th:last-of-type{
+  width: 50px;
+}
+
+.notice thead > tr > td:nth-of-type(2){
+  width: 400px;
+}
+
+#g1{
+  width: 1300px;
+}
+
+#m01{
+  width: 150px;
+}
+
+form > table tr:last-child > td {
+  text-align: center;
+}
+
+#y01 {
+  width: 300px;
+}
+
+#content{
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+#title{
+  width: 300px;
+  border: 1px solid black;
+}
