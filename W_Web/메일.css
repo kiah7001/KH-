@@ -1,0 +1,161 @@
+html, body {
+    height: 100%; /* HTML과 body의 높이를 전체 화면으로 설정 */
+    margin: 0; /* 여백 제거 */
+  }
+
+  body{
+    background-color:  rgb(206, 221, 241);
+  }
+
+/* 상단 태그3개 + home로고 */
+#homelogo {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 7px;
+  
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  
+  
+  #heightlogo {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 20px; /* 요소 사이의 간격 설정 */
+  }
+
+  .heightlogo > #Wmail,
+  .heightlogo > #himg,
+  .heightlogo > #my {
+    padding: 10px;
+  }
+  
+  #logos {
+    display: flex; /* 내부 요소를 가로로 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 10px; /* 요소 사이의 간격 설정 */
+  } */
+  
+  #logo-container {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 5px; /* 요소 사이의 간격 설정 */
+  }
+  
+  #homelogo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  #home-text {
+    font-size: 14px; /* 텍스트 크기 설정 */
+  }
+  
+  #home-link {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+  }
+
+
+
+ /* 검색 */
+  #search {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-right: 40px; /* 프로필 옆 여백 조절 */
+  }
+  
+  #search input[type="text"] {
+    width: 450px;
+    height: 37px;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
+    display: flex;
+
+  }
+  
+  #search button {
+    width: 60px;
+    height: 37px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+  /* 메인grid */
+  #maingrid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+
+    grid-template-columns: 2fr 13fr 1fr;
+    grid-template-rows: 11fr 3fr;
+    border: 1px solid black;
+  }
+
+  #Email {
+    background-color:  rgb(255, 255, 255);
+    border-radius: 25px;
+  }
+
+/* 페이지네이션 버튼 스타일을 설정합니다. */
+    .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    }
+    .pagination li {
+    margin: 0 7px;
+    }
+    .pagination li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 5px;
+    }
+    .pagination li a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    }
+
+
+
+/* #outer{
+    width: 500px;
+    height: 500px;
+    border: 5px dashed gray;
+    margin: 200px auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center; */
+
+    /* grid-gap: 100px; */
+
+    /* grid-auto-flow: column; */
+/* } */
+
+/* #outer > div:nth-child(1) {
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */

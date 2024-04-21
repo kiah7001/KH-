@@ -3,6 +3,8 @@ html, body {
   margin: 0; /* 여백 제거 */
 }
 
+/* 배경 */
+
 #backimg {
   position: fixed; /* 요소를 화면에 고정 */
   top: 0;
@@ -20,19 +22,63 @@ html, body {
   z-index: -1; /* 다른 요소 뒤에 배치 */
 }
 
-.heightlogo{
+
+
+/* 상단 태그3개 + home로고 */
+
+#homelogo {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 10px;
+  width: 70px;
+  height: 70px;
+  padding: 7px;
+
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+
+#heightlogo {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 요소 사이의 간격 설정 */
 }
 .heightlogo > #Wmail,
 .heightlogo > #himg,
 .heightlogo > #my {
-  padding: 5px;
+  padding: 10px;
 }
 
-/* ---------------------------- 상단 태그3개 ------------------------------ */
+#logos {
+  display: flex; /* 내부 요소를 가로로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 요소 사이의 간격 설정 */
+} */
+
+#logo-container {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 5px; /* 요소 사이의 간격 설정 */
+}
+
+#homelogo {
+  width: 70px;
+  height: 70px;
+}
+
+#home-text {
+  font-size: 14px; /* 텍스트 크기 설정 */
+}
+
+#home-link {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+
+
+
+/* 메인 로고 */
 
 .mainlogo > #logo01 > img{
   width: 450px;
@@ -44,10 +90,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 330px;
+  height: 300px;
 }
 
-/* ---------------------------메인 로고--------------------------------------- */
+
+
+/* 검색창 + 검색버튼 */
 
 #search-main{
   display: grid;

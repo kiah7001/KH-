@@ -3,40 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>홈페이지</title>
+  <title>Woongs Website</title>
   <link rel="stylesheet" href="./홈페이지.css">
 </head>
 <body>
 
+  <!-- 배경화면 -->
   <div id="backimg">
     
   </div>
 
-  <!-- -----------------------배경화면---------------------------- -->
-  
-  <div id="heightlogo" class="heightlogo">
-    <div id="Wmail"><a href="나중에 이메일 페이지 만들어서 여따 넣음">Wmail </a></div>
-    <div id="himg">이미지</div>
-    <div id="my">프로필</div>
-  </div>
+  <!-- 상단 로고 및 버튼3개 -->
+  <div id="logos" class="logos">
+    <!-- 메인홈 로고 -->
+    <div id="home" class="homebtn">
+      <a href="./홈페이지.html" id="home-link">
+        <div id="logo-container">
+          <img id="homelogo" src="../img/ohuhome.png" alt="homelogo">
+          <span id="home-text"></span>
+        </div>
+      </a>
+    </div>
 
-  <!-- ------------------------ 상단 로고 3개 -------------------------- -->
+    <!-- 상단 로고 3개 -->
+    <div id="heightlogo" class="heightlogo">
+        <div id="Wmail"><a href="./메일.html">Wmail </a></div>
+        <div id="himg"><a href="./회원가입.html">회원가입</a></div>
+        <div id="my">프로필</div>
+    </div>
+</div>
 
+
+
+  <!-- 메인로고 -->
   <div id="mainlogo" class="mainlogo">
     <div id="logo01"><img src="../img/W&W_Logo.png" alt="mainlogo"></div>
   </div>
 
- <!-- ------------------------ 메인로고 -------------------------- -->
 
+
+ <!-- 검색창 -->
  <div id="search" class="search">
   <form id="searchForm" onsubmit="performSearch(event)">
       <span>😃😊😆</span>
-      <input type="text" name="query" placeholder="Woong 검색 또는 URL 입력" required>
+      <input type="text" name="query" placeholder="      W&W 검색 또는 URL 입력" required>
       <input type="submit" value="검색" class="search-button">
   </form>
 </div>
 
-<!-- -----------------------------검색창------------------------------- -->
+
+
+
+
 
  </div>
 
